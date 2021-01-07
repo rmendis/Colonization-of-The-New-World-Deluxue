@@ -24,6 +24,7 @@
 	<RulesetDomainOverrides>
 		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD_DELUXUE" ParameterId="Map" Domain="NewWorldDeluxueScenario_Maps"/>
 		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD_DELUXUE" ParameterId="GameCalendar" Domain="NewWorldScenario_Calendar"/>
+		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD_DELUXUE" ParameterId="PlayerLeader" Domain="Players:Expansion2_Players"/>
 	</RulesetDomainOverrides>
 	<RulesetSupportedValues>
 		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD_DELUXUE" Domain="StandardEras" Value="ERA_MEDIEVAL"/>
