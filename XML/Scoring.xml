@@ -41,6 +41,12 @@
 			</Set>
 		</Update>
 		<Update>
+			<Where CategoryType="CATEGORY_ERA_SCORE"/>
+			<Set>
+				<Multiplier>0</Multiplier>
+			</Set>
+		</Update>
+		<Update>
 			<Where CategoryType="CATEGORY_SCENARIO1"/>
 			<Set>
 				<Multiplier>1</Multiplier>
@@ -94,6 +100,27 @@
 			<Where LineItemType="LINE_ITEM_WONDERS"/>
 			<Set>
 				<Multiplier>0</Multiplier>
+			</Set>
+		</Update>
+		<Update>
+			<Where LineItemType="LINE_ITEM_ERA_SCORE"/>
+			<Set>
+				<Multiplier>0</Multiplier>
+				<TieBreakerPriority>10</TieBreakerPriority>
+			</Set>
+		</Update>
+		<Update>
+			<Where LineItemType="LINE_ITEM_ERA_CONVERTED"/>
+			<Set>
+				<Multiplier>0</Multiplier>
+				<TieBreakerPriority>10</TieBreakerPriority>
+			</Set>
+		</Update>
+		<Update>
+			<Where LineItemType="LINE_ITEM_ERA_BUILDINGS"/>
+			<Set>
+				<Multiplier>0</Multiplier>
+				<TieBreakerPriority>10</TieBreakerPriority>
 			</Set>
 		</Update>
 		<Update>
