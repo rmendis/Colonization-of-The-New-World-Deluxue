@@ -72,12 +72,7 @@
 		<Row Map="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua" LeaderType="LEADER_PACHACUTI"/>
 		<Row Map="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua" LeaderType="LEADER_ELEANOR_ENGLAND"/>
 		<Row Map="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua" LeaderType="LEADER_ELEANOR_FRANCE"/>
+		<Row Map="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua" LeaderType="LEADER_POUNDMAKER"/>
+		<Row Map="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua" LeaderType="LEADER_LAUTARO"/>
 	</MapLeaders>
-
-	<Queries>
-		<Update>
-			<Where QueryId="MapLeaders" />
-			<Set SQL="SELECT 'Players:*' AS Domain, LeaderType as Value, 'difference' as Filter FROM MapLeaders WHERE Map = ?1" />
-		</Update>
-	</Queries>
 </GameInfo>
