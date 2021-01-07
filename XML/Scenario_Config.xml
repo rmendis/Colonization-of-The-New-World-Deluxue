@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Scenario_Config -->
+<!-- Author: blkbutterfly74 -->
+<!-- DateCreated: 1/30/2018 12:59:08 PM -->
+<GameInfo>
+	<RuleSets>
+		<Row>
+			<RuleSetType>RULESET_SCENARIO_NEW_WORLD_DELUXUE</RuleSetType>
+			<Name>LOC_NEW_WORLD_DELUXUE_SCENARIO_NAME</Name>
+			<Description>LOC_NEW_WORLD_SCENARIO_TOOLTIP</Description>
+			<LongDescription>LOC_NEW_WORLD_SCENARIO_DESCRIPTION</LongDescription>
+			<VictoryDomain>NewWorldDeluxueScenario_Victories</VictoryDomain>
+			<ScenarioSetupPortrait></ScenarioSetupPortrait>
+			<ScenarioSetupPortraitBackground>LEADER_T_ROOSEVELT_BACKGROUND</ScenarioSetupPortraitBackground>
+			<RequiresNoTeams>1</RequiresNoTeams>
+			<RequiresUniqueLeaders>1</RequiresUniqueLeaders>
+			<MaxTurns>175</MaxTurns>
+			<FixedMaxTurns>1</FixedMaxTurns>
+			<IsScenario>1</IsScenario>
+			<GameCore>Expansion2</GameCore>
+		</Row>
+	</RuleSets>
+	<RulesetDomainOverrides>
+		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD_DELUXUE" ParameterId="Map" Domain="NewWorldDeluxueScenario_Maps"/>
+		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD_DELUXUE" ParameterId="GameCalendar" Domain="NewWorldScenario_Calendar"/>
+	</RulesetDomainOverrides>
+	<RulesetSupportedValues>
+		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD_DELUXUE" Domain="StandardEras" Value="ERA_MEDIEVAL"/>
+		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD_DELUXUE" Domain="StandardGameSpeeds" Value="GAMESPEED_STANDARD"/>
+		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD_DELUXUE" Domain="StandardMapSizes" Value="MAPSIZE_SMALL"/>
+		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD_DELUXUE" Domain="StandardTurnLimits" Value="TURNLIMIT_CUSTOM"/>
+	</RulesetSupportedValues>
+	<Victories>
+		<Row Domain="NewWorldDeluxueScenario_Victories" VictoryType="VICTORY_MONUMENTS" Name="LOC_VICTORY_MONUMENTS_NAME" Description="LOC_VICTORY_MONUMENTS_TT"/>
+		<!--Row Domain="NewWorldDeluxueScenario_Victories" VictoryType="VICTORY_ENVIRONMENT" Name="LOC_VICTORY_ENVIRONMENT_NAME" Description="LOC_VICTORY_ENVIRONMENT_TT"/-->
+		<!--Row Domain="NewWorldDeluxueScenario_Victories" VictoryType="VICTORY_ARCHAEOLOGY" Name="LOC_VICTORY_ARCHAEOLOGY_NAME" Description="LOC_VICTORY_ARCHAEOLOGY_TT"/-->
+		<Row Domain="NewWorldDeluxueScenario_Victories" VictoryType="VICTORY_SCORE" Name="LOC_VICTORY_SCORE_NAME" Description="LOC_VICTORY_SCORE_TT" />
+	</Victories>
+	<Maps>
+		<Row Domain="NewWorldDeluxueScenario_Maps" File="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua" Name="LOC_MAP_NEW_WORLD_NAME" Description="LOC_MAP_NEW_WORLD_DESCRIPTION" RequiresUniqueLeaders="1" />
+	</Maps>
+	<MapSizes>
+		<Row Domain="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua" MapSizeType="MAPSIZE_LARGE" Name="LOC_MAPSIZE_LARGE_NAME" Description="LOC_MAPSIZE_LARGE_DESCRIPTION" MinPlayers="8" MaxPlayers="10" DefaultPlayers="10" MinCityStates="0" MaxCityStates="6" DefaultCityStates="6" SortIndex="10"/>
+	</MapSizes>
+	<MapDomainOverrides>
+		<Row Map="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua" ParameterId="MapSize" Domain="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua"/>
+	</MapDomainOverrides>
+	<DomainValues>
+		<Row Domain="NewWorldScenario_Calendar" Value="CALENDAR_STANDARD_FROM_START_ERA" Name="LOC_PLACEHOLDER" Description="LOC_PLACEHOLDER" SortIndex="1"/>
+	</DomainValues>
+	<ParameterCriteria>
+		<Row ParameterId="VICTORY_NEW_WORLD_DELUXUE_SCENARIO" ConfigurationGroup="Game" ConfigurationId="RULESET" Operator="NotEquals" ConfigurationValue="RULESET_SCENARIO_NEW_WORLD_DELUXUE"/>
+	</ParameterCriteria>
+	<ParameterDependencies>
+		<Row ParameterId="Resources" ConfigurationGroup="Game" ConfigurationId="RULESET" Operator="NotEquals" ConfigurationValue="RULESET_SCENARIO_NEW_WORLD_DELUXUE"/>
+		<Row ParameterId="StartPosition" ConfigurationGroup="Game" ConfigurationId="RULESET" Operator="NotEquals" ConfigurationValue="RULESET_SCENARIO_NEW_WORLD_DELUXUE"/>
+	</ParameterDependencies>
+
+	<MapLeaders>
+		<Row Map="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua" LeaderType="RANDOM"/>
+		<Row Map="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua" LeaderType="LEADER_CATHERINE_DE_MEDICI"/>
+		<Row Map="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua" LeaderType="LEADER_CATHERINE_DE_MEDICI_ALT"/>
+		<Row Map="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua" LeaderType="LEADER_MONTEZUMA"/>
+		<Row Map="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua" LeaderType="LEADER_PEDRO"/>
+		<Row Map="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua" LeaderType="LEADER_PHILIP_II"/>
+		<Row Map="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua" LeaderType="LEADER_T_ROOSEVELT"/>
+		<Row Map="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua" LeaderType="LEADER_T_ROOSEVELT_ROUGHRIDER"/>
+		<Row Map="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua" LeaderType="LEADER_VICTORIA"/>
+		<Row Map="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua" LeaderType="LEADER_LADY_SIX_SKY"/>
+		<Row Map="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua" LeaderType="LEADER_SIMON_BOLIVAR"/>
+		<Row Map="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua" LeaderType="LEADER_LAURIER"/>
+		<Row Map="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua" LeaderType="LEADER_PACHACUTI"/>
+		<Row Map="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua" LeaderType="LEADER_ELEANOR_ENGLAND"/>
+		<Row Map="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua" LeaderType="LEADER_ELEANOR_FRANCE"/>
+	</MapLeaders>
+
+	<Queries>
+		<Update>
+			<Where QueryId="MapLeaders" />
+			<Set SQL="SELECT 'Players:*' AS Domain, LeaderType as Value, 'difference' as Filter FROM MapLeaders WHERE Map = ?1" />
+		</Update>
+	</Queries>
+</GameInfo>
