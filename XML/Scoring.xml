@@ -41,6 +41,12 @@
 			</Set>
 		</Update>
 		<Update>
+			<Where CategoryType="CATEGORY_ERA_SCORE"/>
+			<Set>
+				<Multiplier>0</Multiplier>
+			</Set>
+		</Update>
+		<Update>
 			<Where CategoryType="CATEGORY_SCENARIO1"/>
 			<Set>
 				<Multiplier>1</Multiplier>
