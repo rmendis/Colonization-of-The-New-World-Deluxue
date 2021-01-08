@@ -42,7 +42,6 @@
 		<Delete Type="CIVILIZATION_RAPA_NUI"/>
 		<Delete Type="CIVILIZATION_BABYLON"/>
 
-
 		<!-- Religions -->
 		<Delete Type="RELIGION_BUDDHISM" Kind="KIND_RELIGION"/>
 		<Delete Type="RELIGION_CONFUCIANISM" Kind="KIND_RELIGION"/>
@@ -68,6 +67,9 @@
 
 		<!-- prevent AI from building spaceports -->
 		<Delete Type="DISTRICT_SPACEPORT"/>
+
+		<!-- turn off emergencies -->
+		<Delete Type="CAPABILITY_EMERGENCIES"/>
 	</Types>
 
 	<!-- mesoamerican -->
