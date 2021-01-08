@@ -18,9 +18,12 @@
 		<Row Tag="LOC_LINE_ITEM_MONUMENTS_NAME">
 			<Text>National Parks</Text>
 		</Row>
-		
-		<Row Tag="LOC_LINE_ITEM_ARCHAEOLOGY_NAME">
-			<Text>Archaeology</Text>
+
+		<Row Tag="LOC_CATEGORY_CO2_NAME">
+			<Text>CO2 Emissions</Text>
+		</Row>
+		<Row Tag="LOC_LINE_ITEM_CO2_NAME">
+			<Text>C02 Emissions</Text>
 		</Row>
 	</BaseGameText>
 </GameData>

@@ -5,18 +5,26 @@
 
 include "MapEnums"
 
+local NO_IMPROVEMENT = -1;
+
 local function OnGameTurnStarted( player )
 	local currentTurn = Game.GetCurrentGameTurn();
 	
 	print ("OnGameTurnStarted: Turn " .. tostring(currentTurn));
 
-	-- reset environment scores
 	local aPlayers = PlayerManager.GetAliveMajors();
+
+	-- set carbon footprint scores
+	for _, pPlayer in ipairs(aPlayers) do
+		local CO2:number = GameClimate.GetPlayerCO2Footprint(pPlayer:GetID(), false);
+		pPlayer:SetScoringScenario3(CO2);
+	end
+
+	-- reset environment scores
 	for _, pPlayer in ipairs(aPlayers) do
 		pPlayer:SetScoringScenario1(0);
 	end
 
-	local NO_IMPROVEMENT = -1;
 	g_iW, g_iH = Map.GetGridSize();
 	for i = 0, (g_iW * g_iH) - 1, 1 do
 		pPlot = Map.GetPlotByIndex(i);
@@ -54,17 +62,3 @@ local function OnNationalParkAdded(ePlayer, arg1, arg2)
 	pPlayer:SetScoringScenario2(score + 1);
 end
 Events.NationalParkAdded.Add(OnNationalParkAdded);
-
---------------------------------------------------------------
-
---[[
-function OnGreatWorkCreated(playerID, creatorID, cityX, cityY, buildingID, iGreatWorkIndex)
-
-	print("Great Work added ".. playerID);
-
-	local pPlayer = Players[playerID];
-	local score = pPlayer:GetScoringScenario3();
-	pPlayer:SetScoringScenario3(score + 100);		-- artifacts = 100 VP
-end
-Events.GreatWorkCreated.Add(OnGreatWorkCreated);
---]]
