@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Mountie -->
+<!-- Author: blkbutterfly74 -->
+<!-- DateCreated: 1/8/2021 3:28:59 PM -->
+<GameInfo>
+
+	<!-- cheaper mountie -->
+	<Units>
+		<Update>
+			<Where UnitType="UNIT_CANADA_MOUNTIE"/>
+			<Set Cost ="200" />
+		</Update>
+	</Units>
+
+	<!-- ...but requires horses -->
+	<Units_XP2>
+		<Row>
+			<UnitType>UNIT_CANADA_MOUNTIE</UnitType>
+			<ResourceMaintenanceAmount>0</ResourceMaintenanceAmount>
+			<ResourceCost>10</ResourceCost>
+		</Row>
+	</Units_XP2>
+
+</GameInfo>
