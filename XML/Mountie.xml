@@ -8,7 +8,7 @@
 	<Units>
 		<Update>
 			<Where UnitType="UNIT_CANADA_MOUNTIE"/>
-			<Set Cost ="200" />
+			<Set Cost ="200" StrategicResource="RESOURCE_HORSES"/>
 		</Update>
 	</Units>
 
