@@ -6,6 +6,7 @@
 include "MapEnums"
 
 local NO_IMPROVEMENT = -1;
+g_iW, g_iH = Map.GetGridSize();
 
 local function OnGameTurnStarted( player )
 	local currentTurn = Game.GetCurrentGameTurn();
@@ -14,10 +15,10 @@ local function OnGameTurnStarted( player )
 
 	local aPlayers = PlayerManager.GetAliveMajors();
 
-	-- set carbon footprint scores
+	-- set carbon footprint scores (negative VP)
 	for _, pPlayer in ipairs(aPlayers) do
 		local CO2:number = GameClimate.GetPlayerCO2Footprint(pPlayer:GetID(), false);
-		pPlayer:SetScoringScenario3(CO2);
+		pPlayer:SetScoringScenario3(-CO2);
 	end
 
 	-- reset environment scores
@@ -25,7 +26,6 @@ local function OnGameTurnStarted( player )
 		pPlayer:SetScoringScenario1(0);
 	end
 
-	g_iW, g_iH = Map.GetGridSize();
 	for i = 0, (g_iW * g_iH) - 1, 1 do
 		pPlot = Map.GetPlotByIndex(i);
 		local featureType = pPlot:GetFeatureType();
