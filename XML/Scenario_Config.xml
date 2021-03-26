@@ -42,7 +42,7 @@
 		<Row Domain="NewWorldDeluxueScenario_Maps" File="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua" Name="LOC_MAP_NEW_WORLD_NAME" Description="LOC_MAP_NEW_WORLD_DESCRIPTION" RequiresUniqueLeaders="1" />
 	</Maps>
 	<MapSizes>
-		<Row Domain="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua" MapSizeType="MAPSIZE_LARGE" Name="LOC_MAPSIZE_LARGE_NAME" Description="LOC_MAPSIZE_LARGE_DESCRIPTION" MinPlayers="8" MaxPlayers="12" DefaultPlayers="10" MinCityStates="0" MaxCityStates="6" DefaultCityStates="6" SortIndex="10"/>
+		<Row Domain="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua" MapSizeType="MAPSIZE_LARGE" Name="LOC_MAPSIZE_LARGE_NAME" Description="LOC_MAPSIZE_LARGE_DESCRIPTION" MinPlayers="8" MaxPlayers="13" DefaultPlayers="10" MinCityStates="0" MaxCityStates="5" DefaultCityStates="5" SortIndex="10"/>
 	</MapSizes>
 	<MapDomainOverrides>
 		<Row Map="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua" ParameterId="MapSize" Domain="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua"/>
@@ -76,5 +76,6 @@
 		<Row Map="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua" LeaderType="LEADER_ELEANOR_FRANCE"/>
 		<Row Map="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua" LeaderType="LEADER_POUNDMAKER"/>
 		<Row Map="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua" LeaderType="LEADER_LAUTARO"/>
+		<Row Map="{865B8F9C-19BE-4862-AAE9-1AFD5643DA27}Maps/NewWorld_XP2.lua" LeaderType="LEADER_JOAO_III"/>
 	</MapLeaders>
 </GameInfo>

@@ -35,7 +35,7 @@ local g_TSLs = {
 	--LEADER_MINOR_CIV_BRUSSELS cannot be placed cos of proximity
 	LEADER_MINOR_CIV_BUENOS_AIRES = {102.9, -154.7},
 	--LEADER_MINOR_CIV_GENEVA = {36.1, -85.2},
-	LEADER_MINOR_CIV_LISBON = {42.4, -98.1},
+	--LEADER_MINOR_CIV_LISBON = {42.4, -98.1},   replaced by Portugal
 	--LEADER_MINOR_CIV_TORONTO = {37.1, -166},	-- replaced by Canada
 	--LEADER_MINOR_CIV_GRANADA = {41, -92.7},
 	LEADER_LADY_SIX_SKY = {61.4, -173.5},
@@ -49,6 +49,7 @@ local g_TSLs = {
 	LEADER_LAURIER = {37.1, -166},
 	LEADER_ELEANOR_ENGLAND = {31, -91.8},
 	LEADER_ELEANOR_FRANCE = {35, -91.6},
+	LEADER_JOAO_III = {42.4, -98.1},
 };
 
 local g_iW, g_iH;

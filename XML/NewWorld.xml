@@ -41,6 +41,7 @@
 		<Delete Type="CIVILIZATION_FEZ"/>
 		<Delete Type="CIVILIZATION_RAPA_NUI"/>
 		<Delete Type="CIVILIZATION_BABYLON"/>
+		<Delete Type="CIVILIZATION_LISBON"/>
 
 		<!-- Religions -->
 		<Delete Type="RELIGION_BUDDHISM" Kind="KIND_RELIGION"/>

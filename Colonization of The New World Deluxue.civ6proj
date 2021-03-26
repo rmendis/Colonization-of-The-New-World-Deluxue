@@ -5,7 +5,7 @@
     <Name>Scenario: Colonization of The New World Deluxue</Name>
     <Guid>865b8f9c-19be-4862-aae9-1afd5643da27</Guid>
     <ProjectGuid>615dc569-41ce-4289-9457-7c0aa2718615</ProjectGuid>
-    <ModVersion>2</ModVersion>
+    <ModVersion>3</ModVersion>
     <Teaser>A scenario inspired by the Civ V scenario Conquest of The New World Deluxue</Teaser>
     <Description>A scenario inspired by the Conquest of The New World Deluxue in Civ V.[NEWLINE]8 civs compete for The New World:[NEWLINE]England[NEWLINE]France[NEWLINE]Spain[NEWLINE]America[NEWLINE]The Aztecs[NEWLINE]Brazil[NEWLINE]The Maya[NEWLINE]Gran Colombia[NEWLINE][NEWLINE]Supports New Frontier Pass persona packs for Teddy and Catherine.</Description>
     <Authors>blkbutterfly74</Authors>
@@ -26,6 +26,11 @@
   <Dependency type="Dlc" title="Gran Colombia &amp; Maya Pack" id="9DE86512-DE1A-400D-8C0A-AB46EBBF76B9" />
   <Dependency type="Dlc" title="Expansion: Gathering Storm" id="4873eb62-8ccc-4574-b784-dda455e74e68" />
   <Reference type="Dlc" title="Expansion: Rise and Fall" id="1B28771A-C749-434B-9053-D1380C553DE9" />
+  <Reference type="Dlc" title="DLC: Australia Civilization Pack" id="E3F53C61-371C-440B-96CE-077D318B36C0" />
+  <Reference type="Dlc" title="DLC: Persia and Macedon Civilization Pack" id="E2749E9A-8056-45CD-901B-C368C8E83DEB" />
+  <Reference type="Dlc" title="DLC: Khmer and Indonesia Civilization Pack" id="1F367231-A040-4793-BDBB-088816853683" />
+  <Reference type="Dlc" title="DLC: Nubia Civilization Pack" id="643EA320-8E1A-4CF1-A01C-00D88DDD131A" />
+  <Dependency type="Dlc" title="Portugal Pack" id="FFDF4E79-DEE2-47BB-919B-F5739106627A" />
 </Associations>]]></AssociationData>
     <ModProperties>
       <CustomProperties />
