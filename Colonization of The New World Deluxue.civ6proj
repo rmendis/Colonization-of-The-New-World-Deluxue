@@ -31,7 +31,7 @@
   <Reference type="Dlc" title="DLC: Khmer and Indonesia Civilization Pack" id="1F367231-A040-4793-BDBB-088816853683" />
   <Reference type="Dlc" title="DLC: Nubia Civilization Pack" id="643EA320-8E1A-4CF1-A01C-00D88DDD131A" />
   <Dependency type="Dlc" title="Portugal Pack" id="FFDF4E79-DEE2-47BB-919B-F5739106627A" />
-  <Dependency type="Dlc" title="Kublai Khan &amp; Vietnam PAck" id="865b8f9c-19be-4862-aae9-1afd5643da27" />
+  <Dependency type="Dlc" title="Kublai Khan &amp; Vietnam Pack" id="A3F42CD4-6C3E-4F5A-BC81-BE29E0C0B87C" />
 </Associations>]]></AssociationData>
     <ModProperties>
       <CustomProperties />
