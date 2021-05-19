@@ -62,3 +62,19 @@ local function OnNationalParkAdded(ePlayer, arg1, arg2)
 	pPlayer:SetScoringScenario2(score + 1);
 end
 Events.NationalParkAdded.Add(OnNationalParkAdded);
+
+--------------------------------------------------------------
+
+local function OnImprovementAddedToMap(iX, iY, eImprovementType, ePlayer)
+	if (eImprovementType == GameInfo.Improvements["IMPROVEMENT_FEITORIA"].Index) then
+		print("Feitoria added");
+
+		local pPlayer = Players[ePlayer];
+
+		-- add 500 gold per Feitoria
+		local pGold:table = pPlayer:GetTreasury();
+		local gold = pGold:GetGoldBalance();
+		pGold:SetGoldBalance(gold + 500);
+	end
+end
+Events.ImprovementAddedToMap.Add(OnImprovementAddedToMap);
