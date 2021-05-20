@@ -65,8 +65,9 @@ Events.NationalParkAdded.Add(OnNationalParkAdded);
 
 --------------------------------------------------------------
 
+local m_isLoadComplete = false;
 local function OnImprovementAddedToMap(iX, iY, eImprovementType, ePlayer)
-	if (eImprovementType == GameInfo.Improvements["IMPROVEMENT_FEITORIA"].Index) then
+	if (m_isLoadComplete and eImprovementType == GameInfo.Improvements["IMPROVEMENT_FEITORIA"].Index) then
 		print("Feitoria added");
 
 		local pPlayer = Players[ePlayer];
@@ -78,3 +79,10 @@ local function OnImprovementAddedToMap(iX, iY, eImprovementType, ePlayer)
 	end
 end
 Events.ImprovementAddedToMap.Add(OnImprovementAddedToMap);
+
+--------------------------------------------------------------
+
+local function OnLoadGameViewStateDone()
+	m_isLoadComplete = true;
+end
+Events.LoadGameViewStateDone.Add(OnLoadGameViewStateDone);
