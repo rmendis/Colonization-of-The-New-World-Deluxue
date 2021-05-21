@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- ColossalHead -->
+<!-- Mekewap -->
 <!-- Author: blkbutterfly74 -->
-<!-- DateCreated: 1/24/2018 9:02:45 PM -->
+<!-- DateCreated: 5/21/2021 8:22:38 PM -->
 <GameInfo>
 	<Improvement_ValidFeatures>
-		<Row ImprovementType="IMPROVEMENT_COLOSSAL_HEAD" FeatureType="FEATURE_JUNGLE"/>
+		<Row ImprovementType="IMPROVEMENT_MEKEWAP" FeatureType="FEATURE_FOREST"/>
 	</Improvement_ValidFeatures>
 </GameInfo>
