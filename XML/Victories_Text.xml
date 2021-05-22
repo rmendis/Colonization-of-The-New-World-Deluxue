@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Victories_Text -->
+<!-- Author: blkbutterfly74 -->
+<!-- DateCreated: 4/29/2021 11:20:10 PM -->
+<GameData>
+	<BaseGameText>
+
+		<Row Tag="LOC_VICTORY_COLONIZATION_SCENARIO_NAME">
+			<Text>Eco Victory</Text>
+		</Row>
+		<Row Tag="LOC_VICTORY_COLONIZATION_SCENARIO_TEXT">
+			<Text>You win this victory when first to build 15 Sanctuaries.</Text>
+		</Row>
+
+		<Row Tag="LOC_VICTORY_COLONIZATION_SCENARIO_DESCRIPTION">
+			<Text>The people of the New World have preserved its pristine beauty and natural perfection.[NEWLINE]Will you also honour that tradition or plunder the New World for its resources?[NEWLINE][NEWLINE]The player who completes 15 Sanctuaries before time expires (175 turns) will triumph over its rivals.[NEWLINE][NEWLINE][NEWLINE]SPECIAL RULES:[NEWLINE]Domination, Culture, Religious and Science victories are disabled.</Text>
+		</Row>
+
+	</BaseGameText>
+</GameData>
