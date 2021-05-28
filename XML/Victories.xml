@@ -10,6 +10,7 @@
 		<Delete Type="VICTORY_RELIGIOUS"/>
 		<Delete Type="VICTORY_TECHNOLOGY"/>
 		<Delete Type="VICTORY_CONQUEST"/>
+		<Delete Type="VICTORY_DIPLOMATIC"/>
 
 		<!-- scenario specific victory -->
 		<Row Type="VICTORY_COLONIZATION_SCENARIO" Kind="KIND_VICTORY"/>
