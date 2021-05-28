@@ -75,6 +75,12 @@
 
 		<!-- turn off emergencies -->
 		<Delete Type="CAPABILITY_EMERGENCIES"/>
+		
+		<!-- turn off diplo victory resolution and others -->
+		<Delete Type="WC_RES_DIPLOVICTORY" />
+		<Delete Type="WC_RES_HERITAGE_ORG" />
+		<Delete Type="WC_RES_PUBLIC_WORKS" />
+
 	</Types>
 
 	<!-- mesoamerican -->
