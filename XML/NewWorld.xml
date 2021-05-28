@@ -93,6 +93,7 @@
 	<FavoredReligions>
 		<Row LeaderType="LEADER_MONTEZUMA" ReligionType="RELIGION_CUSTOM_1" />
 		<Row LeaderType="LEADER_LADY_SIX_SKY" ReligionType="RELIGION_CUSTOM_1" />
+		<Row LeaderType="LEADER_PACHACUTI" ReligionType="RELIGION_CUSTOM_1" />
 	</FavoredReligions>
 
 	<!--AI changes-->
