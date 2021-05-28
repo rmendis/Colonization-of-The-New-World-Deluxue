@@ -38,7 +38,17 @@
 		<Delete AgendaType="AGENDA_POPULOUS"/>
 		<Delete AgendaType="AGENDA_STANDING_ARMY"/>
 		<Delete AgendaType="AGENDA_TECHNOPHILE"/>
-		<Delete AgendaType="AGENDA_WONDER_ADVOCATE"/>
+		<Delete AgendaType="AGENDA_WONDER_ADVOCATE"/>#
+		<Delete AgendaType="AGENDA_DEMAGOGUE"/>
+		<Delete AgendaType="AGENDA_DESTINATION_CIV"/>
+		<Delete AgendaType="AGENDA_INTOLERANT"/>
+		<Delete AgendaType="AGENDA_DESTINATION_CIV"/>
+		<Delete AgendaType="AGENDA_GREAT_WHITE_FLEET"/>
+		<Delete AgendaType="AGENDA_LIBERTARIAN"/>
+		<Delete AgendaType="AGENDA_PILLAGER"/>
+		<Delete AgendaType="AGENDA_TURTLER"/>
+		<Delete AgendaType="AGENDA_ZEALOT"/>
+
 	</RandomAgendas>
 
 	<Types>
@@ -86,6 +96,32 @@
 		<Delete Type="TRAIT_AGENDA_PREFER_FAITH"/>
 		<Delete Type="TRAIT_AGENDA_TRIEU_DEFENDER"/>
 		<Delete Type="TRAIT_AGENDA_KUBLAI_PAX"/>
+		
+		<Delete Type="TRAIT_AGENDA_ANGEVIN_EMPIRE"/>
+		<Delete Type="TRAIT_AGENDA_BILLIONAIRE"/>
+		<Delete Type="TRAIT_AGENDA_CHEOMSEONGDAE"/>
+		<Delete Type="TRAIT_AGENDA_CURMUDGEON"/>
+		<Delete Type="TRAIT_AGENDA_FLAT_EARTHER"/>
+		<Delete Type="TRAIT_AGENDA_FLIRTATIOUS"/>
+		<Delete Type="TRAIT_AGENDA_GREAT_WHITE_FLEET"/>
+		<Delete Type="TRAIT_AGENDA_HORN_CHEST_LOINS"/>
+		<Delete Type="TRAIT_AGENDA_HORSE_LORD"/>
+		<Delete Type="TRAIT_AGENDA_INTOLERANT"/>
+		<Delete Type="TRAIT_AGENDA_KAITIAKITANGA"/>
+		<Delete Type="TRAIT_AGENDA_LAWGIVER"/>
+		<Delete Type="TRAIT_AGENDA_LORD_OF_MINES"/>
+		<Delete Type="TRAIT_AGENDA_MAURYA_EMPIRE"/>
+		<Delete Type="TRAIT_AGENDA_NARIKALA_FORTRESS"/>
+		<Delete Type="TRAIT_AGENDA_PATRON_OF_ARTS"/>
+		<Delete Type="TRAIT_AGENDA_PREFER_NODIPLOVP"/>
+		<Delete Type="TRAIT_AGENDA_PREFER_NOFAVOR"/>
+		<Delete Type="TRAIT_AGENDA_PREFER_NOTOURISM"/>
+		<Delete Type="TRAIT_AGENDA_PREFER_PILLAGE"/>
+		<Delete Type="TRAIT_AGENDA_RAVEN_BANNER"/>
+		<Delete Type="TRAIT_AGENDA_SICILIAN_WARS"/>
+		<Delete Type="TRAIT_AGENDA_TURTLER"/>
+		<Delete Type="TRAIT_AGENDA_ZEALOT"/>
+
 	</Types>
 
 	<AgendaTraits>
@@ -139,6 +175,12 @@
 		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_LADY_SIX_SKY" PercentageChance="90"/>
 		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_SIMON_BOLIVAR" PercentageChance="90"/>
 		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_JOAO_III" PercentageChance="90"/>
+		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_LAUTARO" PercentageChance="90"/>
+		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_ROBERT_THE_BRUCE" PercentageChance="90"/>
+		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_ELEANOR_ENGLAND" PercentageChance="90"/>
+		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_ELEANOR_FRANCE" PercentageChance="90"/>
+		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_LAURIER" PercentageChance="90"/>
+		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_POUNDMAKER" PercentageChance="90"/>
 	</AgendaPreferredLeaders>
 
 	<!-- AI strategy for Ecologist agenda -->
