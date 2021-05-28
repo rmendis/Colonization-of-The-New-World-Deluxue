@@ -15,8 +15,8 @@
 		<Row AgendaType="AGENDA_ECOLOGIST" Name="LOC_AGENDA_ECOLOGIST_NAME" Description="LOC_AGENDA_ECOLOGIST_DESCRIPTION"/>
 	</Agendas>
 
-	<RandomAgendas>
-		<Row AgendaType="AGENDA_ECOLOGIST"/>
+	<RandomAgendas_XP2>
+		<Row AgendaType="AGENDA_ECOLOGIST" RequiresReligion="false" />
 
 		<!-- remove other random agendas -->
 		<Delete AgendaType="AGENDA_AIRPOWER"/>
@@ -50,7 +50,7 @@
 		<Delete AgendaType="AGENDA_ZEALOT"/>
 		<Delete AgendaType="AGENDA_FLAT_EARTHER"/>
 
-	</RandomAgendas>
+	</RandomAgendas_XP2>
 
 	<Types>
 		<!-- - Agendas -->
