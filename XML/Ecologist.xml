@@ -48,6 +48,7 @@
 		<Delete AgendaType="AGENDA_PILLAGER"/>
 		<Delete AgendaType="AGENDA_TURTLER"/>
 		<Delete AgendaType="AGENDA_ZEALOT"/>
+		<Delete AgendaType="AGENDA_FLAT_EARTHER"/>
 
 	</RandomAgendas>
 
