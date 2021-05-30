@@ -15,8 +15,8 @@
 		<Row AgendaType="AGENDA_ECOLOGIST" Name="LOC_AGENDA_ECOLOGIST_NAME" Description="LOC_AGENDA_ECOLOGIST_DESCRIPTION"/>
 	</Agendas>
 
-	<RandomAgendas_XP2>
-		<Row AgendaType="AGENDA_ECOLOGIST" RequiresReligion="false" />
+	<RandomAgendas>
+		<Row AgendaType="AGENDA_ECOLOGIST" />
 
 		<!-- remove other random agendas -->
 		<Delete AgendaType="AGENDA_AIRPOWER"/>
@@ -49,7 +49,42 @@
 		<Delete AgendaType="AGENDA_TURTLER"/>
 		<Delete AgendaType="AGENDA_ZEALOT"/>
 		<Delete AgendaType="AGENDA_FLAT_EARTHER"/>
+	</RandomAgendas>
 
+	<RandomAgendas_XP2>
+		<Row AgendaType="AGENDA_ECOLOGIST" AgendaTag="AGENDA_ANY_ERA" />
+
+		<!-- remove other random agendas -->
+		<Delete AgendaType="AGENDA_AIRPOWER"/>
+		<Delete AgendaType="AGENDA_CITY_STATE_ALLY"/>
+		<Delete AgendaType="AGENDA_CITY_STATE_PROTECTOR"/>
+		<Delete AgendaType="AGENDA_CIVILIZED"/>
+		<Delete AgendaType="AGENDA_CULTURED"/>
+		<Delete AgendaType="AGENDA_DARWINIST"/>
+		<Delete AgendaType="AGENDA_DEVOUT"/>
+		<Delete AgendaType="AGENDA_EXPLOITATIVE"/>
+		<Delete AgendaType="AGENDA_EXPLORER"/>
+		<Delete AgendaType="AGENDA_FUN_LOVING"/>
+		<Delete AgendaType="AGENDA_GREAT_PERSON_ADVOCATE"/>
+		<Delete AgendaType="AGENDA_IDEOLOGUE"/>
+		<Delete AgendaType="AGENDA_INDUSTRIALIST"/>
+		<Delete AgendaType="AGENDA_MONEY_GRUBBER"/>
+		<Delete AgendaType="AGENDA_NUKE_LOVER"/>
+		<Delete AgendaType="AGENDA_PARANOID"/>
+		<Delete AgendaType="AGENDA_POPULOUS"/>
+		<Delete AgendaType="AGENDA_STANDING_ARMY"/>
+		<Delete AgendaType="AGENDA_TECHNOPHILE"/>
+		<Delete AgendaType="AGENDA_WONDER_ADVOCATE"/>#
+		<Delete AgendaType="AGENDA_DEMAGOGUE"/>
+		<Delete AgendaType="AGENDA_DESTINATION_CIV"/>
+		<Delete AgendaType="AGENDA_INTOLERANT"/>
+		<Delete AgendaType="AGENDA_DESTINATION_CIV"/>
+		<Delete AgendaType="AGENDA_GREAT_WHITE_FLEET"/>
+		<Delete AgendaType="AGENDA_LIBERTARIAN"/>
+		<Delete AgendaType="AGENDA_PILLAGER"/>
+		<Delete AgendaType="AGENDA_TURTLER"/>
+		<Delete AgendaType="AGENDA_ZEALOT"/>
+		<Delete AgendaType="AGENDA_FLAT_EARTHER"/>
 	</RandomAgendas_XP2>
 
 	<Types>
@@ -97,7 +132,6 @@
 		<Delete Type="TRAIT_AGENDA_PREFER_FAITH"/>
 		<Delete Type="TRAIT_AGENDA_TRIEU_DEFENDER"/>
 		<Delete Type="TRAIT_AGENDA_KUBLAI_PAX"/>
-		
 		<Delete Type="TRAIT_AGENDA_ANGEVIN_EMPIRE"/>
 		<Delete Type="TRAIT_AGENDA_BILLIONAIRE"/>
 		<Delete Type="TRAIT_AGENDA_CHEOMSEONGDAE"/>
@@ -122,7 +156,6 @@
 		<Delete Type="TRAIT_AGENDA_SICILIAN_WARS"/>
 		<Delete Type="TRAIT_AGENDA_TURTLER"/>
 		<Delete Type="TRAIT_AGENDA_ZEALOT"/>
-
 	</Types>
 
 	<AgendaTraits>
