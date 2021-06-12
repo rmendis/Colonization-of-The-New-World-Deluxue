@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Recon -->
+<!-- Author: blkbutterfly74 -->
+<!-- DateCreated: 6/10/2021 10:53:55 AM -->
+<GameInfo>
+	<!-- Survey Policy buff -->
+	<ModifierArguments>
+		<Update>
+			<Where>
+				<ModifierId>SURVEY_RECONUNITEXPERIENCE</ModifierId>
+				<Name>Amount</Name>
+			</Where>
+			<Set>
+				<Value>200</Value>
+			</Set>
+		</Update>
+	</ModifierArguments>
+
+	<!-- goody huts scenario rebalance -->
+	<GoodyHutSubTypes>
+		<!-- all available from get go -->
+		<Update>
+			<Set>
+				<Turn>0</Turn>
+			</Set>
+		</Update>
+		
+		<Update>
+			<Where>
+				<GoodyHut>GOODYHUT_CULTURE</GoodyHut>
+				<SubTypeGoodyHut>GOODYHUT_ONE_RELIC</SubTypeGoodyHut>
+			</Where>
+			<Set>
+				<Weight>5</Weight>
+			</Set>
+		</Update>
+		<Update>
+			<Where>
+				<GoodyHut>GOODYHUT_CULTURE</GoodyHut>
+				<SubTypeGoodyHut>GOODYHUT_TWO_CIVIC_BOOSTS</SubTypeGoodyHut>
+			</Where>
+			<Set>
+				<Weight>35</Weight>
+			</Set>
+		</Update>
+		<Update>
+			<Where>
+				<GoodyHut>GOODYHUT_CULTURE</GoodyHut>
+				<SubTypeGoodyHut>GOODYHUT_ONE_CIVIC_BOOST</SubTypeGoodyHut>
+			</Where>
+			<Set>
+				<Weight>60</Weight>
+			</Set>
+		</Update>
+
+		<Update>
+			<Where>
+				<GoodyHut>GOODYHUT_MILITARY</GoodyHut>
+				<SubTypeGoodyHut>GOODYHUT_HEAL</SubTypeGoodyHut>
+			</Where>
+			<Set>
+				<Weight>5</Weight>
+			</Set>
+		</Update>
+		<Update>
+			<Where>
+				<GoodyHut>GOODYHUT_MILITARY</GoodyHut>
+				<SubTypeGoodyHut>GOODYHUT_GRANT_UPGRADE</SubTypeGoodyHut>
+			</Where>
+			<Set>
+				<Weight>20</Weight>
+			</Set>
+		</Update>
+
+		<Update>
+			<Where>
+				<GoodyHut>GOODYHUT_DIPLOMACY</GoodyHut>
+				<SubTypeGoodyHut>GOODYHUT_FAVOR</SubTypeGoodyHut>
+			</Where>
+			<Set>
+				<Weight>10</Weight>
+			</Set>
+		</Update>
+		<Update>
+			<Where>
+				<GoodyHut>GOODYHUT_DIPLOMACY</GoodyHut>
+				<SubTypeGoodyHut>GOODYHUT_GOVERNOR_TITLE</SubTypeGoodyHut>
+			</Where>
+			<Set>
+				<Weight>60</Weight>
+			</Set>
+		</Update>
+		<Update>
+			<Where>
+				<GoodyHut>GOODYHUT_DIPLOMACY</GoodyHut>
+				<SubTypeGoodyHut>GOODYHUT_ENVOY</SubTypeGoodyHut>
+			</Where>
+			<Set>
+				<Weight>30</Weight>
+			</Set>
+		</Update>
+		
+		<Update>
+			<Where>
+				<GoodyHut>GOODYHUT_SURVIVORS</GoodyHut>
+				<SubTypeGoodyHut>GOODYHUT_ADD_POP</SubTypeGoodyHut>
+			</Where>
+			<Set>
+				<Weight>30</Weight>
+			</Set>
+		</Update>
+		<Update>
+			<Where>
+				<GoodyHut>GOODYHUT_SURVIVORS</GoodyHut>
+				<SubTypeGoodyHut>GOODYHUT_GRANT_SETTLER</SubTypeGoodyHut>
+			</Where>
+			<Set>
+				<Weight>10</Weight>
+			</Set>
+		</Update>
+	</GoodyHutSubTypes>
+</GameInfo>

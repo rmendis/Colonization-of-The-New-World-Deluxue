@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Recon_Text -->
+<!-- Author: blkbutterfly74 -->
+<!-- DateCreated: 6/10/2021 10:59:39 AM -->
+<GameData>
+	<LocalizedText>
+		<Update>
+			<Where>
+				<Tag>LOC_POLICY_SURVEY_DESCRIPTION</Tag>
+				<Language>en_US</Language>
+			</Where>
+			<Set>
+				<Text>200% experience for recon units.</Text>
+			</Set>
+		</Update>
+	</LocalizedText>
+</GameData>
