@@ -209,12 +209,9 @@
 		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_LADY_SIX_SKY" PercentageChance="90"/>
 		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_SIMON_BOLIVAR" PercentageChance="90"/>
 		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_JOAO_III" PercentageChance="90"/>
-		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_LAUTARO" PercentageChance="90"/>
-		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_ROBERT_THE_BRUCE" PercentageChance="90"/>
 		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_ELEANOR_ENGLAND" PercentageChance="90"/>
 		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_ELEANOR_FRANCE" PercentageChance="90"/>
 		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_LAURIER" PercentageChance="90"/>
-		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_POUNDMAKER" PercentageChance="90"/>
 	</AgendaPreferredLeaders>
 
 	<!-- AI strategy for Ecologist agenda -->

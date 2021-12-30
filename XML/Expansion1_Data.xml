@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Expansion1_Data -->
+<!-- Author: blkbutterfly74 -->
+<!-- DateCreated: 12/30/2021 12:20:09 PM -->
+<GameInfo>
+	<AgendaPreferredLeaders>
+		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_LAUTARO" PercentageChance="90"/>
+		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_POUNDMAKER" PercentageChance="90"/>
+		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_ROBERT_THE_BRUCE" PercentageChance="90"/>
+		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_WILHELMINA" PercentageChance="90"/>
+	</AgendaPreferredLeaders>
+</GameInfo>
