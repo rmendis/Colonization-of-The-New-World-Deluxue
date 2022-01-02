@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Polder -->
+<!-- Author: blkbutterfly74 -->
+<!-- DateCreated: 1/2/2022 7:57:59 AM -->
+<GameInfo>
+	<Improvements>
+		<Update>
+			<Where>
+				<ImprovementType>IMPROVEMENT_POLDER</ImprovementType>
+			</Where>
+			<Set>
+				<PrereqCivic></PrereqCivic>
+				<PrereqTech>TECH_MILITARY_ENGINEERING</PrereqTech>
+			</Set>
+		</Update>
+	</Improvements>
+</GameInfo>
