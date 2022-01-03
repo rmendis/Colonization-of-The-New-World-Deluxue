@@ -2,16 +2,94 @@
 <!-- Polder -->
 <!-- Author: blkbutterfly74 -->
 <!-- DateCreated: 1/2/2022 7:57:59 AM -->
-<GameInfo>
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Types>
+		<Row Type="TRAIT_CIVILIZATION_IMPROVEMENT_POLDER_LAND" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_CIVILIZATION_IMPROVEMENT_POLDER_SEA" Kind="KIND_TRAIT"/>
+		<Row Type="IMPROVEMENT_POLDER_LAND" Kind="KIND_IMPROVEMENT"/>
+		<Row Type="IMPROVEMENT_POLDER_SEA" Kind="KIND_IMPROVEMENT"/>
+	</Types>
+
+	<Traits>
+		<Row TraitType="TRAIT_CIVILIZATION_IMPROVEMENT_POLDER_LAND" Name="LOC_IMPROVEMENT_POLDER_NAME"/>
+		<Row TraitType="TRAIT_CIVILIZATION_IMPROVEMENT_POLDER_SEA" Name="LOC_IMPROVEMENT_POLDER_NAME"/>
+	</Traits>
+	<CivilizationTraits>
+		<Row CivilizationType="CIVILIZATION_NETHERLANDS" TraitType="TRAIT_CIVILIZATION_IMPROVEMENT_POLDER_LAND"/>
+		<Row CivilizationType="CIVILIZATION_NETHERLANDS" TraitType="TRAIT_CIVILIZATION_IMPROVEMENT_POLDER_SEA"/>
+
+		<Delete CivilizationType="CIVILIZATION_NETHERLANDS" TraitType="TRAIT_CIVILIZATION_IMPROVEMENT_POLDER"/>
+	</CivilizationTraits>
+
 	<Improvements>
-		<Update>
-			<Where>
-				<ImprovementType>IMPROVEMENT_POLDER</ImprovementType>
-			</Where>
-			<Set>
-				<PrereqCivic></PrereqCivic>
-				<PrereqTech>TECH_MILITARY_ENGINEERING</PrereqTech>
-			</Set>
-		</Update>
+		<Row ImprovementType="IMPROVEMENT_POLDER_LAND" Name="LOC_IMPROVEMENT_POLDER_NAME" Description="LOC_IMPROVEMENT_POLDER_LAND_DESCRIPTION" Icon="ICON_IMPROVEMENT_POLDER" PlunderType="PLUNDER_FAITH" PlunderAmount="25" Buildable="true" PrereqTech="TECH_MILITARY_ENGINEERING" Housing="1" TraitType="TRAIT_CIVILIZATION_IMPROVEMENT_POLDER_LAND"/>
+		<Row ImprovementType="IMPROVEMENT_POLDER_SEA" Name="LOC_IMPROVEMENT_POLDER_NAME" Description="LOC_IMPROVEMENT_POLDER_DESCRIPTION" Icon="ICON_IMPROVEMENT_POLDER" PlunderType="PLUNDER_FAITH" PlunderAmount="25" Buildable="true" PrereqCivic="CIVIC_GUILDS" Housing="1" Domain="DOMAIN_SEA" TraitType="TRAIT_CIVILIZATION_IMPROVEMENT_POLDER_SEA"  MovementChange="2"/>
+
+		<Delete ImprovementType="IMPROVEMENT_POLDER" Name="LOC_IMPROVEMENT_POLDER_NAME" Description="LOC_IMPROVEMENT_POLDER_DESCRIPTION" Icon="ICON_IMPROVEMENT_POLDER" PlunderType="PLUNDER_FAITH" PlunderAmount="25" Buildable="true" PrereqCivic="CIVIC_GUILDS" ValidAdjacentTerrainAmount="3" Housing="1" TilesRequired="2" Domain="DOMAIN_SEA" TraitType="TRAIT_CIVILIZATION_IMPROVEMENT_POLDER" MovementChange="2"/>
 	</Improvements>
-</GameInfo>
+
+	<Improvement_ValidFeatures>
+		<Row ImprovementType="IMPROVEMENT_POLDER_LAND" FeatureType="FEATURE_FLOODPLAINS"/>
+		<Row ImprovementType="IMPROVEMENT_POLDER_LAND" FeatureType="FEATURE_FLOODPLAINS_GRASSLAND"/>
+		<Row ImprovementType="IMPROVEMENT_POLDER_LAND" FeatureType="FEATURE_FLOODPLAINS_PLAINS"/>
+		<Row ImprovementType="IMPROVEMENT_POLDER_LAND" FeatureType="FEATURE_MARSH"/>
+
+		<Delete ImprovementType="IMPROVEMENT_POLDER" />
+	</Improvement_ValidFeatures>
+
+	<Improvement_ValidTerrains>
+		<Row ImprovementType="IMPROVEMENT_POLDER_SEA" TerrainType="TERRAIN_COAST"/>
+
+		<Delete ImprovementType="IMPROVEMENT_POLDER" />
+	</Improvement_ValidTerrains>
+
+	<Improvement_Adjacencies>
+		<Row ImprovementType="IMPROVEMENT_POLDER_SEA" YieldChangeId="Polder_Polder_Food_Early_Sea"/>
+		<Row ImprovementType="IMPROVEMENT_POLDER_SEA" YieldChangeId="Polder_Polder_Food_Late_Sea"/>
+		<Row ImprovementType="IMPROVEMENT_POLDER_SEA" YieldChangeId="Polder_Polder_Production_Sea"/>
+
+		<Row ImprovementType="IMPROVEMENT_POLDER_LAND" YieldChangeId="Polder_MedievalAdjacency"/>
+		<Row ImprovementType="IMPROVEMENT_POLDER_LAND" YieldChangeId="Polder_MechanizedAdjacency"/>
+
+		<Delete ImprovementType="IMPROVEMENT_POLDER" />
+	</Improvement_Adjacencies>
+
+	<Improvement_ValidBuildUnits>
+		<Row ImprovementType="IMPROVEMENT_POLDER_LAND" UnitType="UNIT_BUILDER"/>
+		<Row ImprovementType="IMPROVEMENT_POLDER_SEA" UnitType="UNIT_BUILDER"/>
+
+		<Delete ImprovementType="IMPROVEMENT_POLDER" />
+	</Improvement_ValidBuildUnits>
+
+	<Improvement_YieldChanges>
+		<Row ImprovementType="IMPROVEMENT_POLDER_LAND" YieldType="YIELD_FOOD" YieldChange="1"/>
+		<Row ImprovementType="IMPROVEMENT_POLDER_LAND" YieldType="YIELD_GOLD" YieldChange="0"/>
+		<Row ImprovementType="IMPROVEMENT_POLDER_LAND" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+		<Row ImprovementType="IMPROVEMENT_POLDER_SEA" YieldType="YIELD_FOOD" YieldChange="1"/>
+		<Row ImprovementType="IMPROVEMENT_POLDER_SEA" YieldType="YIELD_GOLD" YieldChange="0"/>
+		<Row ImprovementType="IMPROVEMENT_POLDER_SEA" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+
+		<Delete ImprovementType="IMPROVEMENT_POLDER" />
+	</Improvement_YieldChanges>
+
+	<Adjacency_YieldChanges>
+		<Row ID="Polder_Polder_Food_Early_Sea" Description="Placeholder" YieldType="YIELD_FOOD" YieldChange="1" TilesRequired="1" AdjacentImprovement="IMPROVEMENT_POLDER_SEA" ObsoleteTech="TECH_REPLACEABLE_PARTS"/>
+		<Row ID="Polder_Polder_Food_Late_Sea" Description="Placeholder" YieldType="YIELD_FOOD" YieldChange="2" TilesRequired="1" AdjacentImprovement="IMPROVEMENT_POLDER_SEA" PrereqTech="TECH_REPLACEABLE_PARTS"/>
+		<Row ID="Polder_Polder_Production_Sea" Description="Placeholder" YieldType="YIELD_PRODUCTION" YieldChange="1" TilesRequired="1" AdjacentImprovement="IMPROVEMENT_POLDER_SEA" PrereqTech="TECH_REPLACEABLE_PARTS"/>
+
+		<Row ID="Polder_MedievalAdjacency" Description="Placeholder" YieldType="YIELD_FOOD" YieldChange="1" TilesRequired="2" AdjacentImprovement="IMPROVEMENT_POLDER_LAND" PrereqCivic="CIVIC_FEUDALISM" ObsoleteTech="TECH_REPLACEABLE_PARTS"/>
+		<Row ID="Polder_MechanizedAdjacency" Description="Placeholder" YieldType="YIELD_FOOD" YieldChange="1" TilesRequired="1" AdjacentImprovement="IMPROVEMENT_POLDER_LAND" PrereqTech="TECH_REPLACEABLE_PARTS"/>
+	</Adjacency_YieldChanges>
+
+	<Improvement_BonusYieldChanges>
+		<Row Id="125" ImprovementType="IMPROVEMENT_POLDER_LAND" YieldType="YIELD_GOLD" BonusYieldChange="4" PrereqCivic="CIVIC_CIVIL_ENGINEERING"/>
+		<Row Id="126" ImprovementType="IMPROVEMENT_POLDER_SEA" YieldType="YIELD_GOLD" BonusYieldChange="4" PrereqCivic="CIVIC_CIVIL_ENGINEERING"/>
+	</Improvement_BonusYieldChanges>
+
+	<MomentIllustrations>
+		<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_IMPROVEMENT" MomentDataType="MOMENT_DATA_IMPROVEMENT" GameDataType="IMPROVEMENT_POLDER_LAND" Texture="Moment_Infrastructure_Netherlands.dds"/>
+		<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_IMPROVEMENT" MomentDataType="MOMENT_DATA_IMPROVEMENT" GameDataType="IMPROVEMENT_POLDER_SEA" Texture="Moment_Infrastructure_Netherlands.dds"/>
+	</MomentIllustrations>
+
+</GameData>

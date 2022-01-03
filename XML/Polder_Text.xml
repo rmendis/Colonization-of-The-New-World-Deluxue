@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Polder_Text -->
+<!-- Author: blkbutterfly74 -->
+<!-- DateCreated: 1/3/2022 3:25:20 PM -->
+<GameData>
+	<LocalizedText>
+		<Row Tag="LOC_IMPROVEMENT_POLDER_LAND_DESCRIPTION" Language="en_US">
+			<Text>Unlocks the Builder ability to construct a Polder on floodplains and marsh, unique to Netherlands.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food, +1 [ICON_Production] Production, and +0.5 [ICON_Housing] Housing. +1 [ICON_FOOD] Food if adjacent to a Polder improvement. Additional [ICON_PRODUCTION] Production, [ICON_GOLD] Gold, and [ICON_FOOD] Food  as you advance through the Civics and Technology Tree.</Text>
+		</Row>
+
+		<Update>
+			<Where>
+				<Tag>LOC_IMPROVEMENT_POLDER_DESCRIPTION</Tag>
+				<Language>en_US</Language>
+			</Where>
+			<Set>
+				<Text>Unlocks the Builder ability to construct a Polder on coast and lakes, unique to Netherlands.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food, +1 [ICON_Production] Production, and +0.5 [ICON_Housing] Housing. +1 [ICON_FOOD] Food if adjacent to a Polder improvement. Additional [ICON_PRODUCTION] Production, [ICON_GOLD] Gold, and [ICON_FOOD] Food  as you advance through the Civics and Technology Tree. Must be placed on a Coast or Lake tile adjacent to 3 or more passable land tiles. Increases [ICON_Movement] Movement Cost of tile to 3.</Text>
+			</Set>
+		</Update>
+
+		<!--
+		<Row Tag="LOC_IMPROVEMENT_POLDER_LAND_NAME" Language="en_US">
+			<Text>Polder (Land)</Text>
+		</Row>
+		
+		<Row Tag="LOC_IMPROVEMENT_POLDER_SEA_NAME" Language="en_US">
+			<Text>Polder (Sea)</Text>
+		</Row>
+		-->
+	</LocalizedText>
+</GameData>
