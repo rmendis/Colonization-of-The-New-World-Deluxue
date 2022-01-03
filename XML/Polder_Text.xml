@@ -12,14 +12,12 @@
 			<Text>Unlocks the Builder ability to construct a Polder on coast and lakes, unique to Netherlands.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food, +1 [ICON_Production] Production, and +0.5 [ICON_Housing] Housing. +1 [ICON_FOOD] Food if adjacent to a Polder improvement. Additional [ICON_PRODUCTION] Production, [ICON_GOLD] Gold, and [ICON_FOOD] Food  as you advance through the Civics and Technology Tree. Must be placed on a Coast or Lake tile adjacent to 3 or more passable land tiles. Increases [ICON_Movement] Movement Cost of tile to 3.</Text>
 		</Row>
 
-		<!--
 		<Row Tag="LOC_IMPROVEMENT_POLDER_LAND_NAME" Language="en_US">
-			<Text>Polder (Land)</Text>
+			<Text>Polder I</Text>
 		</Row>
 		
 		<Row Tag="LOC_IMPROVEMENT_POLDER_SEA_NAME" Language="en_US">
-			<Text>Polder (Sea)</Text>
+			<Text>Polder II</Text>
 		</Row>
-		-->
 	</LocalizedText>
 </GameData>
