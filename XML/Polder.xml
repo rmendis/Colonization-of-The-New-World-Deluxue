@@ -24,7 +24,7 @@
 
 	<Improvements>
 		<Row ImprovementType="IMPROVEMENT_POLDER_LAND" Name="LOC_IMPROVEMENT_POLDER_NAME" Description="LOC_IMPROVEMENT_POLDER_LAND_DESCRIPTION" Icon="ICON_IMPROVEMENT_POLDER" PlunderType="PLUNDER_FAITH" PlunderAmount="25" Buildable="true" PrereqTech="TECH_MILITARY_ENGINEERING" Housing="1" TraitType="TRAIT_CIVILIZATION_IMPROVEMENT_POLDER_LAND"/>
-		<Row ImprovementType="IMPROVEMENT_POLDER_SEA" Name="LOC_IMPROVEMENT_POLDER_NAME" Description="LOC_IMPROVEMENT_POLDER_DESCRIPTION" Icon="ICON_IMPROVEMENT_POLDER" PlunderType="PLUNDER_FAITH" PlunderAmount="25" Buildable="true" PrereqCivic="CIVIC_GUILDS" ValidAdjacentTerrainAmount="3" Housing="1" Domain="DOMAIN_SEA" TraitType="TRAIT_CIVILIZATION_IMPROVEMENT_POLDER_SEA"  MovementChange="2"/>
+		<Row ImprovementType="IMPROVEMENT_POLDER_SEA" Name="LOC_IMPROVEMENT_POLDER_NAME" Description="LOC_IMPROVEMENT_POLDER_SEA_DESCRIPTION" Icon="ICON_IMPROVEMENT_POLDER" PlunderType="PLUNDER_FAITH" PlunderAmount="25" Buildable="true" PrereqCivic="CIVIC_GUILDS" ValidAdjacentTerrainAmount="3" Housing="1" Domain="DOMAIN_SEA" TraitType="TRAIT_CIVILIZATION_IMPROVEMENT_POLDER_SEA"  MovementChange="2"/>
 
 		<Delete ImprovementType="IMPROVEMENT_POLDER" Name="LOC_IMPROVEMENT_POLDER_NAME" Description="LOC_IMPROVEMENT_POLDER_DESCRIPTION" Icon="ICON_IMPROVEMENT_POLDER" PlunderType="PLUNDER_FAITH" PlunderAmount="25" Buildable="true" PrereqCivic="CIVIC_GUILDS" ValidAdjacentTerrainAmount="3" Housing="1" TilesRequired="2" Domain="DOMAIN_SEA" TraitType="TRAIT_CIVILIZATION_IMPROVEMENT_POLDER" MovementChange="2"/>
 	</Improvements>
