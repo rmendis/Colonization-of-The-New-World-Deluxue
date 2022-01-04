@@ -11,5 +11,10 @@
 			<Set ParkCharges="2" Cost ="300" />
 		</Update>
 	</Units>
+
+	<!-- fix to build national parks -->
+	<UnitAiInfos>
+		<Row UnitType="UNIT_NATURALIST" AiType="UNITAI_BUILD" />
+	</UnitAiInfos>
 	
 </GameInfo>

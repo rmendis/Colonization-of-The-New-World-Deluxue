@@ -20,5 +20,10 @@
 			<ResourceCost>10</ResourceCost>
 		</Row>
 	</Units_XP2>
+
+	<!-- fix to build national parks -->
+	<UnitAiInfos>
+		<Row UnitType="UNIT_AMERICAN_ROUGH_RIDER" AiType="UNITAI_BUILD" />
+	</UnitAiInfos>
 	
 </GameInfo>

@@ -12,5 +12,9 @@
 		</Update>
 	</Units>
 
+	<!-- fix to build national parks -->
+	<UnitAiInfos>
+		<Row UnitType="UNIT_SPANISH_CONQUISTADOR" AiType="UNITAI_SETTLE" />
+	</UnitAiInfos>
 
 </GameInfo>

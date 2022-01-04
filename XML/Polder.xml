@@ -4,6 +4,7 @@
 <!-- DateCreated: 1/2/2022 7:57:59 AM -->
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
+	<!-- can build polder on floodplains and marsh like in Civ V -->
 	<Types>
 		<Row Type="IMPROVEMENT_POLDER_LAND" Kind="KIND_IMPROVEMENT"/>
 		<Row Type="IMPROVEMENT_POLDER_SEA" Kind="KIND_IMPROVEMENT"/>

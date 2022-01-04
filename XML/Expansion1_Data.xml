@@ -9,4 +9,9 @@
 		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_ROBERT_THE_BRUCE" PercentageChance="90"/>
 		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_WILHELMINA" PercentageChance="90"/>
 	</AgendaPreferredLeaders>
+
+	<!-- AI fixes for naval and air siege -->
+	<UnitAiInfos>
+		<Row UnitType="UNIT_DE_ZEVEN_PROVINCIEN" AiType="UNITTYPE_SIEGE_ALL" />
+	</UnitAiInfos>
 </GameInfo>
