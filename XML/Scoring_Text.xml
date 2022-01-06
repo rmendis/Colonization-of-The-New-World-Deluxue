@@ -13,10 +13,10 @@
 		</Row>
 		
 		<Row Tag="LOC_CATEGORY_MONUMENTS_NAME">
-			<Text>National Parks</Text>
+			<Text>National Parks &amp; Preserves</Text>
 		</Row>	
 		<Row Tag="LOC_LINE_ITEM_MONUMENTS_NAME">
-			<Text>National Parks</Text>
+			<Text>National Parks &amp; Preserves</Text>
 		</Row>
 
 		<Row Tag="LOC_CATEGORY_CO2_NAME">

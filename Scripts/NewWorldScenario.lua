@@ -59,7 +59,7 @@ local function OnNationalParkAdded(ePlayer, arg1, arg2)
 
 	-- increment national parks count
 	local score = pPlayer:GetScoringScenario2();
-	pPlayer:SetScoringScenario2(score + 1);
+	pPlayer:SetScoringScenario2(score + 2);		-- NP = 2x Preserve VP
 end
 Events.NationalParkAdded.Add(OnNationalParkAdded);
 
@@ -97,8 +97,8 @@ function OnDistrictConstructed(iPlayer, eDistrictType, iX, iY)
 		local pPlayer = Players[iPlayer];
 		
 		-- increment Preserve count 
-		local score = pPlayer:GetScoringScenario3();
-		pPlayer:SetScoringScenario3(score + 1);
+		local score = pPlayer:GetScoringScenario2();
+		pPlayer:SetScoringScenario2(score + 1);
 	end
 end
 GameEvents.OnDistrictConstructed.Add(OnDistrictConstructed);
