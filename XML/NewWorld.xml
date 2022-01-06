@@ -79,6 +79,8 @@
 		<Delete Type="WC_RES_DIPLOVICTORY" />
 		<Delete Type="WC_RES_HERITAGE_ORG" />
 		<Delete Type="WC_RES_PUBLIC_WORKS" />
+		<Delete Type="WC_RES_LUXURY" />
+		<Delete Type="WC_RES_ARMS_CONTROL" />
 	</Types>
 
 	<!-- mesoamerican -->
