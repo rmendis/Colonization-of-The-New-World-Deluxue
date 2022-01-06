@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Resolutions -->
+<!-- Author: blkbutterfly74 -->
+<!-- DateCreated: 1/6/2022 11:36:34 AM -->
+<GameData>
+	<Resolutions>
+		<Delete ResolutionType = 'WC_RES_LUXURY'/>
+		<Delete ResolutionType = 'WC_RES_DIPLOVICTORY'/>
+		<Delete ResolutionType = 'WC_RES_SOVEREIGNTY'/>
+		<Delete ResolutionType = 'WC_RES_ARMS_CONTROL'/>
+	</Resolutions>
+
+	<ResolutionEffects>
+		<Delete ResolutionType = 'WC_RES_LUXURY'/>
+		<Delete ResolutionType = 'WC_RES_DIPLOVICTORY'/>
+		<Delete ResolutionType = 'WC_RES_SOVEREIGNTY'/>
+		<Delete ResolutionType = 'WC_RES_ARMS_CONTROL'/>
+	</ResolutionEffects>
+</GameData>
