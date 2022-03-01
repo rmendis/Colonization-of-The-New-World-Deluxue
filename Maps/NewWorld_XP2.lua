@@ -827,6 +827,8 @@ end
 function FeatureGenerator:AddIceToMap()
 	local iTargetIceTiles = (self.iGridH * self.iGridW *  (GlobalParameters.ICE_TILES_PERCENT + self.iIceModifiedPercent)) / 100;
 
+	print ("Target Ice Tiles: " .. tostring(iTargetIceTiles));
+
 	local aPhases = {};
 	local iPhases = 0;
 	for row in GameInfo.RandomEvents() do
@@ -859,7 +861,7 @@ function FeatureGenerator:AddIceToMap()
 		for y = self.iGridH - 1, 0, -1 do
 			local _lat = _GetRadialLatitudeAtPlot(earth, x, y);
 
-			if (_lat > 0.83 or _lat < -0.66) then
+			if (_lat > 0.66 or _lat < - 0.6) then
 				local i = y * self.iGridW + x;
 
 				local plot = Map.GetPlotByIndex(i);
@@ -912,12 +914,15 @@ function FeatureGenerator:AddIceToMap()
 			-- Roll die to see which of these get ice
 			if (#aTargetPlots > 0) then
 				local iPercentNeeded = 100 * iIceTilesToAdd / #aTargetPlots;
+
+				print ("iPercentNeeded: " .. tostring(iPercentNeeded));
+
 				for i, targetPlot in ipairs(aTargetPlots) do
 					local iFinalPercentNeeded = iPercentNeeded + 10 * targetPlot.AdjacentIce;
 					if (targetPlot.AdjacentToLand == true) then
 						iFinalPercentNeeded = iFinalPercentNeeded / 5;
 					end
-					if (TerrainBuilder.GetRandomNumber(100, "Permanent Ice") <= iFinalPercentNeeded) then
+					if (TerrainBuilder.GetRandomNumber(100, "Non permanent Ice") <= iFinalPercentNeeded) then
 					    local plot = Map.GetPlotByIndex(targetPlot.PlotIndex);
 						AddIceAtPlot(plot, plot:GetX(), plot:GetY(), kPhaseDetails.RandomEventEnum); 
 					end
@@ -932,20 +937,22 @@ function AddIceAtPlot(plot, iX, iY, iE)
 	local _lat = _GetRadialLatitudeAtPlot(earth, iX, iY);
 	local lat = math.abs(_lat);
 	
-	local iScore = TerrainBuilder.GetRandomNumber(100, "Resource Placement Score Adjust");
+	if (_lat > 0.66 or _lat < - 0.6) then
+		local iScore = TerrainBuilder.GetRandomNumber(100, "Resource Placement Score Adjust");
 
-	iScore = iScore + (lat * 100);
+		iScore = iScore + (lat * 100);
 
-	if(IsAdjacentToLandPlot(iX,iY) == true) then
-		iScore = iScore / math.sqrt(2.0);			-- only difference from non-radial map
-	end
+		if(IsAdjacentToLandPlot(iX,iY) == true) then
+			iScore = iScore / math.sqrt(2.0);			-- only difference from non-radial map
+		end
 
-	local iAdjacent = TerrainBuilder.GetAdjacentFeatureCount(plot, g_FEATURE_ICE);
-	iScore = iScore + 10.0 * iAdjacent;
+		local iAdjacent = TerrainBuilder.GetAdjacentFeatureCount(plot, g_FEATURE_ICE);
+		iScore = iScore + 10.0 * iAdjacent;
 
-	if(iScore > 130) then
-		TerrainBuilder.SetFeatureType(plot, g_FEATURE_ICE);
-		TerrainBuilder.AddIce(plot:GetIndex(), iE); 
+		if(iScore > 130) then
+			TerrainBuilder.SetFeatureType(plot, g_FEATURE_ICE);
+			TerrainBuilder.AddIce(plot:GetIndex(), iE); 
+		end
 	end
 end
 
