@@ -194,4 +194,16 @@
 		<Row UnitType="UNIT_PRIVATEER" AiType="UNITAI_EXPLORE" />
 		<Row UnitType="UNIT_ENGLISH_SEADOG" AiType="UNITAI_EXPLORE" />
 	</UnitAiInfos>
+
+	<!-- GS ice percent -->
+	<GlobalParameters>
+		<Update>
+			<Set>
+				<Value>10</Value>
+			</Set>
+			<Where>
+				<Name>ICE_TILES_PERCENT</Name>
+			</Where>
+		</Update>
+	</GlobalParameters>
 </GameInfo>
