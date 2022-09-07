@@ -81,7 +81,31 @@
 		<Delete Type="WC_RES_PUBLIC_WORKS" />
 		<Delete Type="WC_RES_LUXURY" />
 		<Delete Type="WC_RES_ARMS_CONTROL" />
+		<Delete Type="WC_RES_BORDER_CONTROL" />
+		<Delete Type="WC_RES_ESPIONAGE_PACT" />
+		<Delete Type="WC_RES_MIGRATION_TREATY" />
+		<Delete Type="WC_RES_WORLD_RELIGION" />
 	</Types>
+
+	<!-- eco resolutions -->
+	<Resolutions>
+		<Update>
+			<Where>
+				<ResolutionType>WC_RES_DEFORESTATION_TREATY</ResolutionType>
+			</Where>
+			<Set>
+				<EarliestEra>ERA_MODERN</EarliestEra>
+			</Set>
+		</Update>
+		<Update>
+			<Where>
+				<ResolutionType>WC_RES_GLOBAL_ENERGY_TREATY</ResolutionType>
+			</Where>
+			<Set>
+				<EarliestEra>ERA_INDUSTRIAL</EarliestEra>
+			</Set>
+		</Update>
+	</Resolutions>
 
 	<!-- mesoamerican -->
 	<Religions>
