@@ -17,8 +17,8 @@
 	</ModifierArguments>
 
 	<!-- goody huts scenario rebalance -->
+<!--
 	<GoodyHutSubTypes>
-		<!-- all available from get go -->
 		<Update>
 			<Set>
 				<Turn>0</Turn>
@@ -119,4 +119,5 @@
 			</Set>
 		</Update>
 	</GoodyHutSubTypes>
+-->
 </GameInfo>
