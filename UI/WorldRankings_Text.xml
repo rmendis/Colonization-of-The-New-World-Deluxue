@@ -18,7 +18,18 @@
 			<Text>THE NEW WORLD</Text>
 		</Row>
 		<Row Tag="LOC_SCENARIO_NEW_WORLD_EFFECTS">
-			<Text>The New World is a vast beautiful pristine natural wilderness.[NEWLINE]You score victory points for preserving that beautiy and cultural heritage. Specifically:[NEWLINE]1. Environment: 5VP for each unimproved rainforest, forest and marsh tile.[NEWLINE]2. Monuments: 50VP for each National Park.[NEWLINE]3. Archaeology: 100VP for each artifact excavated from archaeology.</Text>
+			<Text>The New World is a vast beautiful pristine natural wilderness.[NEWLINE]You score victory points for preserving that beautiy and cultural heritage. Specifically:[NEWLINE]1. Environment: 10VP for each unimproved rainforest, forest and marsh tile.[NEWLINE]2. Monuments: 100VP for each National Park.[NEWLINE]3. 50VP for each Preserve built.</Text>
 		</Row>
 	</FrontendText>
+
+	<LocalizedText>
+		<!-- REPLACEMENTS -->
+		<Delete Tag="LOC_WORLD_RANKINGS_SCORE_DETAILS"/>
+	</LocalizedText>
+
+	<EnglishText>
+		<Row Tag="LOC_WORLD_RANKINGS_SCORE_DETAILS">
+			<Text>A [COLOR:NeutralCS]SCORE[ENDCOLOR] victory occurs if no civilization builds 20 Sanctuaries by the end of the game (after 175 turns) and if you pass a certain threshold:[NEWLINE]Settler: 2250[NEWLINE]Chieftain: 2500[NEWLINE]Warlord: 2750[NEWLINE]Prince: 3000[NEWLINE]King:3250 [NEWLINE]Emperor: 3500[NEWLINE]Immortal: 3750[NEWLINE]Diety: 4000[NEWLINE][NEWLINE]The New World is a vast beautiful pristine natural wilderness. You score victory points for preserving that beauty and natural heritage:[NEWLINE][ICON_Bullet]100VP for each National Park[NEWLINE][ICON_Bullet]10VP for every unimproved tile of forest, marsh and rain forest in your empire.[NEWLINE][ICON_Bullet]50VP for every Preserve constructed.</Text>
+		</Row>
+	</EnglishText>
 </GameData>
