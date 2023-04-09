@@ -20,10 +20,10 @@
 		</Row>
 
 		<Row Tag="LOC_CATEGORY_CO2_NAME">
-			<Text>CO2 Emissions</Text>
+			<Text>[COLOR_RED]CO2 Emissions[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="LOC_LINE_ITEM_CO2_NAME">
-			<Text>C02 Emissions</Text>
+			<Text>[COLOR_RED]C02 Emissions[ENDCOLOR]</Text>
 		</Row>
 	</BaseGameText>
 </GameData>
